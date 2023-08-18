@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primaryColor: #bdd1d4;
+    --mainBlack: #181c1f;
+    --primaryBlack: #282f33;
+    --primaryGrey: #2d3942;
+    --primaryYellow:#f3e248;
+}
+
+body {
+    background-color: var(--mainBlack);
+    color: var(--primaryColor);
+}
+
+.head-container {
+    padding: 20px;
+    position: relative;
+    display: block;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 40px;
+    height: 45px;
+    position: absolute;
+}
+
+.title-container {
+    margin-left: 60px;
+    height: 45px;
+    padding-top: 0px;
+    
+}
+
+.title {
+    color: var(--primaryYellow);
+    padding-top: 0px;
+    font-size: 25px;
+}
+
+.menu {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#filterBtns {
+    display: flex;
+    flex-direction: row;
+}
+
+#filterBtns button {
+    border: none;
+    background-color: var(--primaryBlack);
+    color: var(--primaryColor);
+    display: flex;
+    border-radius: 5px 5px 0px 0px;
+    padding: 8px;
+}
+
+#filterBtns button:nth-child(even) {
+    margin: 0px 3px;
+}
+
+#menu-content {
+    background-color: var(--primaryGrey);
+    border-radius: 0px 5px 5px 5px;
+    width: 420px;
+    height: 170px;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-content li {
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#filterBtns .btn:hover, #filterBtns .btn.active {
+    background-color: var(--primaryYellow);
+    color: var(--primaryGrey);
+}
